@@ -26,11 +26,11 @@ public class Postagem {
 	private long id;
 	
 	@NotNull
-	@Size(min = 5, max = 100)
+	@Size(min = 3, max = 100)
 	private String titulo;
 	
-	public Postagem(long id, @NotNull @Size(min = 5, max = 100) String titulo,
-			@NotNull @Size(min = 10, max = 500) String texto, Date date, Tema tema) {
+	public Postagem(long id, @NotNull @Size(min = 3, max = 100) String titulo,
+			@NotNull @Size(min = 3, max = 500) String texto, Date date, Tema tema) {
 		super();
 		this.id = id;
 		this.titulo = titulo;
@@ -40,7 +40,7 @@ public class Postagem {
 	}
 
 	@NotNull
-	@Size(min = 10, max = 500)
+	@Size(min = 3, max = 500)
 	private String texto;
 	
 	@Temporal(TemporalType.TIMESTAMP)
