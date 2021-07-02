@@ -22,7 +22,6 @@ import org.generation.blogpessoal.model.Tema;
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping("/tema")
-
 public class TemaController {
 	
 	@Autowired
