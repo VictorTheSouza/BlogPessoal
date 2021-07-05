@@ -28,7 +28,7 @@ public class TemaController {
 	private TemaRepository repository;
 	
 	@GetMapping
-	public ResponseEntity<List<Tema>> getAll(){
+	public ResponseEntity<List<Tema>> getAll(@PathVariable Tema tema){
 		return ResponseEntity.ok(repository.findAll());
 	}
 	
