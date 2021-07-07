@@ -20,7 +20,7 @@ import org.generation.blogpessoal.model.Postagem;
 
 @RestController
 @RequestMapping("/postagens")
-@CrossOrigin("*")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class PostagemController {
 	
 	@Autowired
