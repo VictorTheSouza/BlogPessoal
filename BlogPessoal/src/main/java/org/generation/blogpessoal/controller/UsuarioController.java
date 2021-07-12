@@ -39,7 +39,7 @@ public class UsuarioController {
 				.body(usuarioService.CadastrarUsuario(usuario));
 	}
 	
-	@GetMapping("{/id}")
+	@GetMapping("/{id}")
 	public ResponseEntity<Usuario> GetById(@PathVariable long id){
 		return repository.findById(id).map(resp-> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
 	}
